@@ -3,7 +3,7 @@ from typing import List
 
 from dingodb.protos.proxy_common_pb2 import *
 from dingodb.protos.proxy_index_pb2 import *
-from pydantic import BaseModel, validator
+from pydantic.v1 import BaseModel, validator
 from dingodb.utils.tools import auto_value_type, auto_expr_type, convert_dict_to_expr
 import json
 from . import grpc_config as config
